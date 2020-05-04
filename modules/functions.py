@@ -12,7 +12,7 @@ __maintainer__ = "JRIC2002"
 __email__ = "joselito18032002@gmail.com"
 __status__ = "Production"
 
-def addition(numbers):
+def sum(numbers):
     """ Imprime el resultado de la suma. """
 
     try:
@@ -23,7 +23,7 @@ def addition(numbers):
     except Exception:
         print("Error: no se puede sumar letras o simbolos.")
 
-def subtraction(numbers):
+def subtract(numbers):
     """ Imprime el resultado de la resta. """
 
     try:
@@ -37,7 +37,7 @@ def subtraction(numbers):
     except Exception:
         print("Error: no se puede restar letras o simbolos")
 
-def multiplication(numbers):
+def multiply(numbers):
     """ Imprime el resultado de la multiplicación. """
 
     try:
@@ -48,7 +48,7 @@ def multiplication(numbers):
     except Exception:
         print("Error: no se puede multiplicar letras o simbolos")
 
-def division(num1, num2):
+def divide(num1, num2):
     """ Imprime el resultado de la división. """
     
     try:
