@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #! -*- coding: utf-8 -*-
 
-""" Funciones aritmeticas. """
+""" Este módulo contiene funciones que realizan operaciones matemáticas. """
 
 __author__ = "JRIC2002"
 __copyright__ = "Copyright 2020, JRIC2002"
@@ -21,7 +21,7 @@ def sum(numbers):
             result = result + float(number)
         print(result)
     except Exception:
-        print("Error: no se puede sumar letras o simbolos.")
+        print("Error: No se puede sumar letras o símbolos.")
 
 def subtract(numbers):
     """ Imprime el resultado de la resta. """
@@ -35,7 +35,7 @@ def subtract(numbers):
         result = float(numbers[0]) - result
         print(result)
     except Exception:
-        print("Error: no se puede restar letras o simbolos")
+        print("Error: No se puede restar letras o símbolos.")
 
 def multiply(numbers):
     """ Imprime el resultado de la multiplicación. """
@@ -46,15 +46,18 @@ def multiply(numbers):
             result = result * float(number)
         print(result)
     except Exception:
-        print("Error: no se puede multiplicar letras o simbolos")
+        print("Error: No se puede multiplicar letras o símbolos.")
 
 def divide(num1, num2):
     """ Imprime el resultado de la división. """
     
     try:
-        print(float(num1) / float(num2))
+        if float(num2) != 0:
+            print(float(num1) / float(num2))
+        else:
+            print("Error: No se puede dividir entre cero.")
     except Exception:
-        print("Error: no se puede dividir letras o simbolos")
+        print("Error: No se puede dividir letras o símbolos.")
 
 def power(num1, num2):
     """ Imprime el resultado de la potencia. """
@@ -62,7 +65,7 @@ def power(num1, num2):
     try:
         print(float(num1) ** float(num2))
     except Exception:
-        print("Error: no se puede tener como base o exponente letras o simbolos")
+        print("Error: La base y el exponente no pueden ser letras o símbolos.")
 
 #START
 if __name__ == "__main__":
