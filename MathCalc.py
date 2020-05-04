@@ -77,11 +77,11 @@ class Start():
         print("   Options:")
         print("      At least one of these options must be provided to perform the mathematical operation.")
         print("")
-        print("      -s,                     Perform the mathematical operation of 'SUM'")
-        print("      -r,                     Perform the mathematical operation of 'SUBTRACT'")
-        print("      -m,                     Perform the mathematical operation of 'MULTIPLY'")
-        print("      -d,                     Perform the mathematical operation of 'DIVIDE'")
-        print("      -p,                     Perform the mathematical operation of 'POWER'")
+        print("      -s, --sum               Perform the mathematical operation of 'SUM'")
+        print("      -r, --subtract          Perform the mathematical operation of 'SUBTRACT'")
+        print("      -m, --multiply          Perform the mathematical operation of 'MULTIPLY'")
+        print("      -d, --divide            Perform the mathematical operation of 'DIVIDE'")
+        print("      -p, --power             Perform the mathematical operation of 'POWER'")
 
     def version(self):
         """ Imprime la version de la herramienta MathCalc. """
