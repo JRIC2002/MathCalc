@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #[*] Name of the tool: MathCalc
-#[*] Description:
+#[*] Description: Solve math operations.
 #[*] Version: 1.0
 #[*] Author: JRIC2002
 #[*] Date of creation: 04/05/2020
@@ -55,11 +55,54 @@ class Start():
         """ Imprime el logo de la herramienta MathCalc. """
 
         print("")
-        print("          __  __       _   _        ____      _")
-        print("         |  \/  | __ _| |_| |__    / ___|__ _| | ___")
-        print("         | |\/| |/ _` | __| '_ \  | |   / _` | |/ __|")
-        print("         | |  | | (_| | |_| | | | | |__| (_| | | (__")
-        print("         |_|  |_|\__,_|\__|_| |_|  \____\__,_|_|\___| v1.0")
+        print("         {} __  __       _   _        {}____      _".format(color.blue, color.green))
+        print("         {}|  \/  | __ _| |_| |__    {}/ ___|__ _| | ___".format(color.blue, color.green))
+        print("         {}| |\/| |/ _` | __| '_ \  {}| |   / _` | |/ __|".format(color.blue, color.green))
+        print("         {}| |  | | (_| | |_| | | | {}| |__| (_| | | (__".format(color.blue, color.green))
+        print("         {}|_|  |_|\__,_|\__|_| |_|  {}\____\__,_|_|\___| {}v1.0".format(color.blue, color.green, color.white))
+        print("")
+        print("               {}</> {}Tool coded by:{} JRIC2002 {}</>{}".format(color.gray, color.yellow, color.white, color.gray, color.white))
+        print("          {}</> {}Description:{} Solve math operations {}</>{}".format(color.gray, color.yellow, color.white, color.gray, color.white))
+        print("")
+
+    def help_menu(self):
+        """ Imprime el menú de ayuda de la herramienta MathCalc. """
+
+        print("{}Usage: python3 MathCalc.py [options]".format(color.white))
+        print("")
+        print("Options:")
+        print("   -h, --help              Show this help message and exit.")
+        print("   -v, --version           Show program's version number and exit.")
+        print("")
+        print("   Options:")
+        print("      At least one of these options must be provided to perform the mathematical operation.")
+        print("")
+        print("      -s,                     Perform the mathematical operation of 'SUM'")
+        print("      -r,                     Perform the mathematical operation of 'SUBTRACT'")
+        print("      -m,                     Perform the mathematical operation of 'MULTIPLY'")
+        print("      -d,                     Perform the mathematical operation of 'DIVIDE'")
+        print("      -p,                     Perform the mathematical operation of 'POWER'")
+
+    def version(self):
+        """ Imprime la version de la herramienta MathCalc. """
+
+        print("{}#MathCalc version 1.0".format(color.white))
+
+    def error1(self):
+        """ Imprime un mensaje de error. """
+
+        print("{}Usage: python3 MathCalc.py [options]".format(color.white))
+        print("")
+        print("MathCalc.py: Error: Invalid option.")
+        print("Use -h or --help to see the help menu.")
+
+    def error2(self):
+        """ Imprime un mensaje de error de argumentos. """
+
+        print("{}Usage: python3 MathCalc.py [options]".format(color.white))
+        print("")
+        print("MathCalc.py: Error: Invalid option or arguments.")
+        print("Use -h or --help to see the help menu.")
 
 #Instancia de la clase Start
 start = Start()
@@ -67,26 +110,31 @@ start = Start()
 #START
 if len(sys.argv) == 1:
     start.logo()
+    start.help_menu()
 elif len(sys.argv) == 2:
     if sys.argv[1] == "-h" or sys.argv[1] == "--help":
-        pass
+        start.logo()
+        start.help_menu()
     elif sys.argv[1] == "-v" or sys.argv[1] == "--version":
-        pass
+        start.version()
     else:
-        pass
+        start.logo()
+        start.error1()
 else:
-    if sys.argv[1] == "-s":
-        functions.addition(sys.argv[2:])
-    elif sys.argv[1] == "-r":
-        functions.subtraction(sys.argv[2:])
-    elif sys.argv[1] == "-m":
-        functions.multiplication(sys.argv[2:])
+    if sys.argv[1] == "-s" or sys.argv[1] == "--sum":
+        functions.sum(sys.argv[2:])
+    elif sys.argv[1] == "-r" or sys.argv[1] == "--subtract":
+        functions.subtract(sys.argv[2:])
+    elif sys.argv[1] == "-m" or sys.argv[1] == "--multiply":
+        functions.multiply(sys.argv[2:])
     elif len(sys.argv) == 4:
-        if sys.argv[1] == "-d":
-            functions.division(sys.argv[2], sys.argv[3])
-        elif sys.argv[1] == "-p":
+        if sys.argv[1] == "-d" or sys.argv[1] == "--divide":
+            functions.divide(sys.argv[2], sys.argv[3])
+        elif sys.argv[1] == "-p" or sys.argv[1] == "--power":
             functions.power(sys.argv[2], sys.argv[3])
         else:
-            print("ERROR de opcion")
+            start.logo()
+            start.error1()
     else:
-        print("Error de opcion o de argumentos")
+        start.logo()
+        start.error2()
