@@ -22,7 +22,7 @@ Esta herramienta es solo para fines educativos. El desarrollador no asume ningun
    ```bash
    cd MathCalc
    ```
-3. Dar permisos de ejecución al archivo.
+3. Dar permiso de ejecución al archivo.
    ```bash
    chmod +x MathCalc.py
    ```
