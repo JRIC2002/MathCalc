@@ -1,5 +1,5 @@
 # MathCalc
-![MathCalc - Version](https://img.shields.io/badge/MathCalc-v1.0-brightgreen)
+![MathCalc - Version](https://img.shields.io/badge/MathCalc-1.0-brightgreen)
 ![Release - Stable](https://img.shields.io/badge/Release-Stable-brightgreen)
 ![Supported OS - Linux](https://img.shields.io/badge/Supported%20OS-Linux-blue)
 
