@@ -74,7 +74,7 @@ class Start():
         print("   -h, --help              Show this help message and exit.")
         print("   -v, --version           Show program's version number and exit.")
         print("")
-        print("   Options:")
+        print("   Basic operations:")
         print("      At least one of these options must be provided to perform the mathematical operation.")
         print("")
         print("      -s, --sum               Perform the mathematical operation of 'SUM'")
