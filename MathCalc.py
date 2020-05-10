@@ -84,7 +84,7 @@ class Start():
         print("      -p, --power             Perform the mathematical operation of 'POWER'")
 
     def version(self):
-        """ Imprime la version de la herramienta MathCalc. """
+        """ Imprime la versión de la herramienta MathCalc. """
 
         print("{}#MathCalc version 1.0".format(color.white))
 
