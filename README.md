@@ -1,11 +1,11 @@
 # MathCalc
-![MathCalc - Version](https://img.shields.io/badge/MathCalc-1.0-brightgreen)
+![MathCalc - Version](https://img.shields.io/badge/MathCalc-1.1-brightgreen)
 ![Release - Stable](https://img.shields.io/badge/Release-Stable-brightgreen)
 ![Supported OS - Linux](https://img.shields.io/badge/Supported%20OS-Linux-blue)
 
 MathCalc es una herramienta con funciones básicas para resolver operaciones matemáticas: suma, resta, multiplicación, division y potencia.
 
-![MathCalc - Screenshot](https://github.com/JRIC2002/MathCalc/blob/master/.Screenshots/MathCalc-Screenshot%5B01%5D.jpg)
+![MathCalc - Screenshot](https://github.com/JRIC2002/MathCalc/blob/master/.Images/MathCalc-Screenshot%5B01%5D.jpg)
 
 ## Información
 Esta herramienta es solo para fines educativos. El desarrollador no asume ninguna responsabilidad y no es responsable del mal uso o daño causado por este programa.
