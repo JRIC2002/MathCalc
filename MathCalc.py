@@ -1,14 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 #[*] Name of the tool: MathCalc
 #[*] Description: Solve math operations.
-#[*] Version: 1.0
+#[*] Version: 1.1
 #[*] Author: JRIC2002
 #[*] Date of creation: 04/05/2020
-#[*] Date of last update: 04/05/2020
+#[*] Date of last update: 21/08/2020
 
-#MODULES
+#Modules
 
 #External modules
 import sys
@@ -44,7 +44,7 @@ class Color:
 #Instancia de la clase Color
 color = Color()
 
-class Start():
+class Start:
     """ Inicio de la herramienta MathCalc. """
     
     def __init__(self):
@@ -59,7 +59,7 @@ class Start():
         print("         {}|  \/  | __ _| |_| |__    {}/ ___|__ _| | ___".format(color.blue, color.green))
         print("         {}| |\/| |/ _` | __| '_ \  {}| |   / _` | |/ __|".format(color.blue, color.green))
         print("         {}| |  | | (_| | |_| | | | {}| |__| (_| | | (__".format(color.blue, color.green))
-        print("         {}|_|  |_|\__,_|\__|_| |_|  {}\____\__,_|_|\___| {}v1.0".format(color.blue, color.green, color.white))
+        print("         {}|_|  |_|\__,_|\__|_| |_|  {}\____\__,_|_|\___| {}v1.1".format(color.blue, color.green, color.white))
         print("")
         print("               {}</> {}Tool coded by:{} JRIC2002 {}</>{}".format(color.gray, color.yellow, color.white, color.gray, color.white))
         print("          {}</> {}Description:{} Solve math operations {}</>{}".format(color.gray, color.yellow, color.white, color.gray, color.white))
@@ -86,7 +86,7 @@ class Start():
     def version(self):
         """ Imprime la versión de la herramienta MathCalc. """
 
-        print("{}#MathCalc version 1.0".format(color.white))
+        print("{}#MathCalc version 1.1".format(color.white))
 
     def error1(self):
         """ Imprime un mensaje de error. """
@@ -107,7 +107,7 @@ class Start():
 #Instancia de la clase Start
 start = Start()
 
-#START
+#Start
 if len(sys.argv) == 1:
     start.logo()
     start.help_menu()
