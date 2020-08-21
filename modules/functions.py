@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-#! -*- coding: utf-8 -*-
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 """ Este módulo contiene funciones que realizan operaciones matemáticas. """
 
@@ -7,7 +7,7 @@ __author__ = "JRIC2002"
 __copyright__ = "Copyright 2020, JRIC2002"
 __credits__ = "JRIC2002"
 __license__ = "GNU General Public License v3.0"
-__version__ = "1.0"
+__version__ = "1.1"
 __maintainer__ = "JRIC2002"
 __email__ = "joselito18032002@gmail.com"
 __status__ = "Production"
