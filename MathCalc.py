@@ -6,7 +6,6 @@
 #[*] Version: 1.1
 #[*] Author: JRIC2002
 #[*] Date of creation: 04/05/2020
-#[*] Date of last update: 21/08/2020
 
 #Modules
 
@@ -20,26 +19,28 @@ class Color:
     """ Colores en código ANSI. """
 
     #Foreground
-    black = "\033[0;30m"
-    gray = "\033[1;30m"
-    red = "\033[1;31m"
-    green = "\033[1;32m"
-    yellow = "\033[1;33m"
-    blue = "\033[1;34m"
-    magenta = "\033[1;35m"
-    cyan = "\033[1;36m"
-    white = "\033[1;37m"
+    blackColor = "\033[0;30m"
+    grayColor = "\033[1;30m"
+    redColor = "\033[1;31m"
+    greenColor = "\033[1;32m"
+    yellowColor = "\033[1;33m"
+    blueColor = "\033[1;34m"
+    purpleColor = "\033[1;35m"
+    cyanColor = "\033[1;36m"
+    whiteColor = "\033[1;37m"
+    resetColor = "\033[0;0m"
 
     #Background
-    b_black = "\033[0;40m"
-    b_gray = "\033[1;40m"
-    b_red = "\033[1;41m"
-    b_green = "\033[1;42m"
-    b_yellow = "\033[1;43m"
-    b_blue = "\033[1;44m"
-    b_magenta = "\033[1;45m"
-    b_cyan = "\033[1;46m"
-    b_white = "\033[1;47m"
+    blackBackColor = "\033[0;40m"
+    grayBackColor = "\033[1;40m"
+    redBackColor = "\033[1;41m"
+    greenBackColor = "\033[1;42m"
+    yellowBackColor = "\033[1;43m"
+    blueBackColor = "\033[1;44m"
+    purpleBackColor = "\033[1;45m"
+    cyanBackColor = "\033[1;46m"
+    whiteBackColor = "\033[1;47m"
+    resetBackColor = "\033[0;0m"
 
 #Instancia de la clase Color
 color = Color()
@@ -55,20 +56,20 @@ class Start:
         """ Imprime el logo de la herramienta MathCalc. """
 
         print("")
-        print("         {} __  __       _   _        {}____      _".format(color.blue, color.green))
-        print("         {}|  \/  | __ _| |_| |__    {}/ ___|__ _| | ___".format(color.blue, color.green))
-        print("         {}| |\/| |/ _` | __| '_ \  {}| |   / _` | |/ __|".format(color.blue, color.green))
-        print("         {}| |  | | (_| | |_| | | | {}| |__| (_| | | (__".format(color.blue, color.green))
-        print("         {}|_|  |_|\__,_|\__|_| |_|  {}\____\__,_|_|\___| {}v1.1".format(color.blue, color.green, color.white))
+        print("         {} __  __       _   _        {}____      _".format(color.blueColor, color.greenColor))
+        print("         {}|  \/  | __ _| |_| |__    {}/ ___|__ _| | ___".format(color.blueColor, color.greenColor))
+        print("         {}| |\/| |/ _` | __| '_ \  {}| |   / _` | |/ __|".format(color.blueColor, color.greenColor))
+        print("         {}| |  | | (_| | |_| | | | {}| |__| (_| | | (__".format(color.blueColor, color.greenColor))
+        print("         {}|_|  |_|\__,_|\__|_| |_|  {}\____\__,_|_|\___| {}v1.1".format(color.blueColor, color.greenColor, color.whiteColor))
         print("")
-        print("               {}</> {}Tool coded by:{} JRIC2002 {}</>{}".format(color.gray, color.yellow, color.white, color.gray, color.white))
-        print("          {}</> {}Description:{} Solve math operations {}</>{}".format(color.gray, color.yellow, color.white, color.gray, color.white))
+        print("               {}</> {}Tool coded by:{} JRIC2002 {}</>{}".format(color.grayColor, color.yellowColor, color.whiteColor, color.grayColor, color.whiteColor))
+        print("          {}</> {}Description:{} Solve math operations {}</>{}".format(color.grayColor, color.yellowColor, color.whiteColor, color.grayColor, color.resetColor))
         print("")
 
     def help_menu(self):
         """ Imprime el menú de ayuda de la herramienta MathCalc. """
 
-        print("{}Usage: python3 MathCalc.py [options]".format(color.white))
+        print("{}Usage: python3 MathCalc.py [options]".format(color.whiteColor))
         print("")
         print("Options:")
         print("   -h, --help              Show this help message and exit.")
@@ -82,27 +83,28 @@ class Start:
         print("      -m, --multiply          Perform the mathematical operation of 'MULTIPLY'")
         print("      -d, --divide            Perform the mathematical operation of 'DIVIDE'")
         print("      -p, --power             Perform the mathematical operation of 'POWER'")
+        print("{}".format(color.resetColor))
 
     def version(self):
         """ Imprime la versión de la herramienta MathCalc. """
 
-        print("{}#MathCalc version 1.1".format(color.white))
+        print("{}#MathCalc version 1.1{}".format(color.whiteColor, color.resetColor))
 
     def error1(self):
         """ Imprime un mensaje de error. """
 
-        print("{}Usage: python3 MathCalc.py [options]".format(color.white))
+        print("{}Usage: python3 MathCalc.py [options]".format(color.whiteColor))
         print("")
         print("MathCalc.py: Error: Invalid option.")
-        print("Use -h or --help to see the help menu.")
+        print("Use -h or --help to see the help menu.{}".format(color.resetColor))
 
     def error2(self):
         """ Imprime un mensaje de error de argumentos. """
 
-        print("{}Usage: python3 MathCalc.py [options]".format(color.white))
+        print("{}Usage: python3 MathCalc.py [options]".format(color.whiteColor))
         print("")
         print("MathCalc.py: Error: Invalid option or arguments.")
-        print("Use -h or --help to see the help menu.")
+        print("Use -h or --help to see the help menu.".format(color.resetColor))
 
 #Instancia de la clase Start
 start = Start()
