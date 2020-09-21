@@ -9,7 +9,7 @@ __credits__ = "JRIC2002"
 __license__ = "GNU General Public License v3.0"
 __version__ = "1.1"
 __maintainer__ = "JRIC2002"
-__email__ = "joselito18032002@gmail.com"
+__email__ = "example@gmail.com"
 __status__ = "Production"
 
 def sum(numbers):
@@ -67,6 +67,6 @@ def power(num1, num2):
     except Exception:
         print("Error: La base y el exponente no pueden ser letras o símbolos.")
 
-#START
+#Start
 if __name__ == "__main__":
     print("Este archivo es un módulo...")
